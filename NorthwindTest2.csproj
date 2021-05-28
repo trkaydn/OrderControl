@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{23854AE7-7D4A-43EC-B49D-DF48904E17E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NorthwindTest2</RootNamespace>
+    <AssemblyName>NorthwindTest2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAddCtg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddCtg.Designer.cs">
+      <DependentUpon>FrmAddCtg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddProdct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddProdct.Designer.cs">
+      <DependentUpon>FrmAddProdct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddShpr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddShpr.Designer.cs">
+      <DependentUpon>FrmAddShpr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminPanel.Designer.cs">
+      <DependentUpon>FrmAdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdminLogin.Designer.cs">
+      <DependentUpon>FrmAdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewAdmin.Designer.cs">
+      <DependentUpon>FrmNewAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewCustomer.Designer.cs">
+      <DependentUpon>FrmNewCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSendOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSendOrder.Designer.cs">
+      <DependentUpon>FrmSendOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpAdmin.Designer.cs">
+      <DependentUpon>FrmUpAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpAdminCnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpAdminCnt.Designer.cs">
+      <DependentUpon>FrmUpAdminCnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpAdminPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpAdminPass.Designer.cs">
+      <DependentUpon>FrmUpAdminPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpdPrdct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdPrdct.Designer.cs">
+      <DependentUpon>FrmUpdPrdct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpdPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpdPrice.Designer.cs">
+      <DependentUpon>FrmUpdPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpPass.Designer.cs">
+      <DependentUpon>FrmUpPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpUsr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpUsr.Designer.cs">
+      <DependentUpon>FrmUpUsr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUpCnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUpCnt.Designer.cs">
+      <DependentUpon>FrmUpCnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserLogin.Designer.cs">
+      <DependentUpon>FrmUserLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserPanel.Designer.cs">
+      <DependentUpon>FrmUserPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NorthwindDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAddCtg.resx">
+      <DependentUpon>FrmAddCtg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddProdct.resx">
+      <DependentUpon>FrmAddProdct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddShpr.resx">
+      <DependentUpon>FrmAddShpr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminPanel.resx">
+      <DependentUpon>FrmAdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdminLogin.resx">
+      <DependentUpon>FrmAdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewAdmin.resx">
+      <DependentUpon>FrmNewAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewCustomer.resx">
+      <DependentUpon>FrmNewCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSendOrder.resx">
+      <DependentUpon>FrmSendOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpAdmin.resx">
+      <DependentUpon>FrmUpAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpAdminCnt.resx">
+      <DependentUpon>FrmUpAdminCnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpAdminPass.resx">
+      <DependentUpon>FrmUpAdminPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdPrdct.resx">
+      <DependentUpon>FrmUpdPrdct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpdPrice.resx">
+      <DependentUpon>FrmUpdPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpPass.resx">
+      <DependentUpon>FrmUpPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpUsr.resx">
+      <DependentUpon>FrmUpUsr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUpCnt.resx">
+      <DependentUpon>FrmUpCnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserLogin.resx">
+      <DependentUpon>FrmUserLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserPanel.resx">
+      <DependentUpon>FrmUserPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="NorthwindDataSet.xsc">
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NorthwindDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NorthwindDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NorthwindDataSet.xss">
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\shping.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -301,7 +301,7 @@ namespace NorthwindTest2
             SqlDataReader cstreader = cstinf.ExecuteReader();
             cstreader.Read();
 
-            SqlCommand buycommand = new SqlCommand("insert into Orders(CustomerID,OrderDate,ShipVia,Freight,ShipName,ShipAddress,ShipCity,ShipRegion,ShipPostalCode,ShipCountry,EmployeeID) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10,@p11)", connection);
+            SqlCommand buycommand = new SqlCommand("insert into Orders(CustomerID,OrderDate,ShipVia,Freight,ShipName,ShipAddress,ShipCity,ShipRegion,ShipPostalCode,ShipCountry,EmployeeID,OrderStatus) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9,@p10,@p11,@p12)", connection);
             buycommand.Parameters.AddWithValue("@p1", _activatecustomer);
             buycommand.Parameters.AddWithValue("@p2", tarih);
             buycommand.Parameters.AddWithValue("@p3", shipperid);
@@ -313,6 +313,7 @@ namespace NorthwindTest2
             buycommand.Parameters.AddWithValue("@p9", cstreader[4].ToString());
             buycommand.Parameters.AddWithValue("@p10", cstreader[5].ToString());
             buycommand.Parameters.AddWithValue("@p11", cmbemp.SelectedIndex + 1);
+            buycommand.Parameters.AddWithValue("@p12", true);
             cstreader.Close();
             int control = buycommand.ExecuteNonQuery();
 
@@ -329,7 +330,7 @@ namespace NorthwindTest2
             buydetail.Parameters.AddWithValue("@p5", 0);
             buydetail.ExecuteNonQuery();
 
-            SqlCommand stock = new SqlCommand("update Products set UnitsInStock= UnitsInstock - @p1 where ProductID=@p2", connection);
+            SqlCommand stock = new SqlCommand("update Products set UnitsInStock= UnitsInstock - @p1, UnitsOnOrder= UnitsOnOrder + @p1 where ProductID=@p2", connection);
             stock.Parameters.AddWithValue("@p1", numeric.Value);
             stock.Parameters.AddWithValue("@p2", productid);
             stock.ExecuteNonQuery();

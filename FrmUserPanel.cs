@@ -325,7 +325,7 @@ namespace NorthwindTest2
             SqlCommand buydetail = new SqlCommand("insert into OrderDetails values (@p1,@p2,@p3,@p4,@p5)", connection);
             buydetail.Parameters.AddWithValue("@p1", oid);
             buydetail.Parameters.AddWithValue("@p2", productid);
-            buydetail.Parameters.AddWithValue("@p3", txtbrprc.Text);
+            buydetail.Parameters.AddWithValue("@p3", Convert.ToDouble(txtbrprc.Text));
             buydetail.Parameters.AddWithValue("@p4", numeric.Value);
             buydetail.Parameters.AddWithValue("@p5", 0);
             buydetail.ExecuteNonQuery();
